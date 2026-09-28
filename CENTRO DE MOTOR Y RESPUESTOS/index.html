@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro Motor Repuestos | Santiago del Estero - Venta de Repuestos de Motor</title>
+    <meta name="description" content="Especialistas en repuestos y accesorios de motor en Santiago del Estero. Venta de pistones, aros, juntas, tapas de cilindro y más. Consulta stock por WhatsApp.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <span class="logo-accent-blue">CENTRO</span>
+                <span class="logo-accent-red">MOTOR</span>
+                <span class="logo-sub">REPUESTOS</span>
+            </a>
+            <nav class="nav">
+                <a href="#hero" class="nav-link active">Inicio</a>
+                <a href="#tienda" class="nav-link">Catálogo</a>
+                <a href="#nosotros" class="nav-link">Nosotros</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </nav>
+            <div class="header-actions-wrapper">
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Cambiar tema">
+                    <i class="fas fa-sun font-sun"></i>
+                    <i class="fas fa-moon font-moon"></i>
+                </button>
+                <!-- Admin Panel Button -->
+                <button class="btn-admin-panel" id="admin-panel-trigger" title="Administrar Catálogo">
+                    <i class="fas fa-cog"></i> Administrar
+                </button>
+                <a href="https://wa.me/5493857485143" target="_blank" class="btn-nav-whatsapp" id="nav-whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+            </div>
+            <button class="menu-toggle" id="menu-toggle-btn" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobile-menu">
+        <button class="close-menu" id="close-menu-btn"><i class="fas fa-times"></i></button>
+        <nav class="mobile-nav">
+            <a href="#hero" class="mobile-nav-link">Inicio</a>
+            <a href="#tienda" class="mobile-nav-link">Catálogo</a>
+            <a href="#nosotros" class="mobile-nav-link">Nosotros</a>
+            <a href="#contacto" class="mobile-nav-link">Contacto</a>
+            <button class="mobile-nav-link text-left" id="mobile-admin-panel-trigger" style="background:none; border:none; width:100%; padding:0;">
+                <i class="fas fa-cog"></i> Administrar Catálogo
+            </button>
+            <a href="https://wa.me/5493857485143" target="_blank" class="mobile-whatsapp-link">
+                <i class="fab fa-whatsapp"></i> Chatear por WhatsApp
+            </a>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero animate-on-scroll" id="hero">
+        <div class="hero-glow-blue"></div>
+        <div class="hero-glow-red"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="hero-badge"><i class="fas fa-car-side"></i> Especialistas en Repuestos de Motor</span>
+                <h1 class="hero-title">Potencia y Durabilidad para tu Motor</h1>
+                <p class="hero-description">Encuentra los repuestos de la más alta calidad para vehículos en Santiago del Estero. Pistones, juntas, camisas, tapas de cilindro y más con asesoramiento personalizado y envío rápido.</p>
+                <div class="hero-actions">
+                    <a href="#tienda" class="btn btn-primary" id="hero-explore-btn">Explorar Catálogo <i class="fas fa-shopping-cart"></i></a>
+                    <a href="https://wa.me/5493857485143?text=Hola,%20quisiera%20consultar%20por%20un%20repuesto%20en%20particular." target="_blank" class="btn btn-secondary" id="hero-contact-btn">Consultar Stock <i class="fab fa-whatsapp"></i></a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">Efectivo</span>
+                        <span class="stat-label">Único medio de pago</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">+1000</span>
+                        <span class="stat-label">Repuestos Disponibles</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">Delivery</span>
+                        <span class="stat-label">Envíos a domicilio</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <div class="hero-card-glass">
+                    <img src="assets/piston_set.png" alt="Set de pistones profesionales de Centro Motor Repuestos" class="hero-main-img" loading="lazy">
+                    <div class="glass-tag">Pistones de Competición y Línea Original</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands Carousel Section -->
+    <section class="marcas animate-on-scroll">
+        <div class="container">
+            <div class="marcas-grid">
+                <div class="marca-item"><strong>MAHLE</strong></div>
+                <div class="marca-item"><strong>TARANTO</strong></div>
+                <div class="marca-item"><strong>GATES</strong></div>
+                <div class="marca-item"><strong>FEDERAL MOGUL</strong></div>
+                <div class="marca-item"><strong>BOSCH</strong></div>
+                <div class="marca-item"><strong>PERFECT CIRCLE</strong></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tienda / Catálogo Section -->
+    <section class="tienda animate-on-scroll" id="tienda">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">NUESTRO STOCK</span>
+                <h2 class="section-title">Catálogo de Repuestos</h2>
+                <p class="section-description">Explora nuestras piezas en stock con fotos reales. Si no encuentras lo que buscas, consúltanos directamente por WhatsApp; lo conseguimos para ti.</p>
+            </div>
+
+            <!-- Search & Filters Container -->
+            <div class="filter-wrapper">
+                <!-- Search by Text -->
+                <div class="search-bar">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="product-search" placeholder="Buscar pistones, aros, juntas, válvulas...">
+                </div>
+
+                <!-- Advanced Vehicle Search -->
+                <div class="vehicle-search-container">
+                    <h3 class="vehicle-search-title"><i class="fas fa-car-cog"></i> Filtrar por Compatibilidad de Vehículo</h3>
+                    <div class="vehicle-search-grid">
+                        <div class="select-group">
+                            <label for="search-brand">Marca</label>
+                            <select id="search-brand">
+                                <option value="">Todas las marcas</option>
+                                <option value="Fiat">Fiat</option>
+                                <option value="Chevrolet">Chevrolet</option>
+                                <option value="Ford">Ford</option>
+                                <option value="Toyota">Toyota</option>
+                                <option value="Renault">Renault</option>
+                                <option value="Volkswagen">Volkswagen</option>
+                                <option value="Peugeot">Peugeot</option>
+                            </select>
+                        </div>
+                        <div class="select-group">
+                            <label for="search-model">Modelo</label>
+                            <input type="text" id="search-model" placeholder="Ej: Uno, Corsa, Hilux...">
+                        </div>
+                        <div class="select-group">
+                            <label for="search-year">Año</label>
+                            <input type="number" id="search-year" placeholder="Ej: 2012" min="1970" max="2027">
+                        </div>
+                        <div class="select-group btn-group-search">
+                            <button class="btn btn-primary" id="btn-clear-vehicle-filters" style="width:100%; padding: 12px;"><i class="fas fa-undo"></i> Limpiar Filtros</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category Buttons -->
+                <div class="category-filters" id="category-filters">
+                    <button class="filter-btn active" data-category="all" id="filter-all">Todos</button>
+                    <button class="filter-btn" data-category="pistones" id="filter-pistones">Pistones y Bielas</button>
+                    <button class="filter-btn" data-category="juntas" id="filter-juntas">Juntas y Sellos</button>
+                    <button class="filter-btn" data-category="valvulas" id="filter-valvulas">Válvulas y Distribución</button>
+                    <button class="filter-btn" data-category="tapas" id="filter-tapas">Tapas y Block</button>
+                    <button class="filter-btn" data-category="bombas" id="filter-bombas">Bombas y Accesorios</button>
+                </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid" id="products-grid">
+                <!-- Products will be generated dynamically by JavaScript -->
+            </div>
+            
+            <!-- Empty Search Results -->
+            <div class="empty-results d-none" id="empty-results">
+                <i class="fas fa-search-minus empty-icon"></i>
+                <h3>No se encontraron productos</h3>
+                <p>Prueba buscando con otros términos o pregúntanos por WhatsApp si disponemos de stock físico sin publicar.</p>
+                <a href="https://wa.me/5493857485143?text=Hola,%20estoy%20buscando%20un%20repuesto%20que%20no%20encontré%20en%20el%20sitio%20web" target="_blank" class="btn btn-primary mt-4">Consultar por WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nosotros / Info Comercial Section -->
+    <section class="nosotros animate-on-scroll" id="nosotros">
+        <div class="container nosotros-container">
+            <div class="nosotros-content">
+                <span class="section-subtitle">CONÓCENOS</span>
+                <h2 class="section-title">Pasión por los Motores</h2>
+                <p>En <strong>Centro Motor Repuestos</strong> nos dedicamos a proveer soluciones de calidad para rectificadores, mecánicos y entusiastas del motor en Santiago del Estero. Trabajamos con marcas nacionales e importadas de primera línea para asegurar la máxima durabilidad y rendimiento de tu vehículo.</p>
+                
+                <div class="features-list">
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper blue">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <div class="feature-info">
+                            <h4>Servicio de Delivery</h4>
+                            <p>Enviamos tus repuestos directamente a tu taller o domicilio en Santiago del Estero y La Banda de forma rápida.</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper red">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <div class="feature-info">
+                            <h4>Pago Exclusivo en Efectivo</h4>
+                            <p>Para mayor agilidad y mantener los mejores precios, el único medio de pago aceptado es efectivo al momento de la entrega o retiro.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nosotros-info-box">
+                <div class="info-card-glass">
+                    <h3 class="info-card-title"><i class="fas fa-clock"></i> Horarios de Atención</h3>
+                    
+                    <div class="status-indicator-wrapper">
+                        <span class="status-indicator" id="status-indicator">
+                            <span class="status-dot"></span>
+                            <span class="status-text" id="status-text">Cargando estado...</span>
+                        </span>
+                    </div>
+
+                    <ul class="schedule-list">
+                        <li>
+                            <span class="day">Lunes a Viernes</span>
+                            <span class="hours">08:00 - 13:00 <span class="divider">|</span> 16:00 - 20:00</span>
+                        </li>
+                        <li>
+                            <span class="day">Sábados</span>
+                            <span class="hours">08:00 - 13:00</span>
+                        </li>
+                        <li>
+                            <span class="day">Domingos</span>
+                            <span class="hours text-red">Cerrado</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonios animate-on-scroll">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">OPINIONES</span>
+                <h2 class="section-title">Lo que dicen los Rectificadores y Mecánicos</h2>
+                <p class="section-description">Nuestra mejor garantía es la satisfacción y el éxito de los profesionales locales.</p>
+            </div>
+            <div class="testimonios-grid">
+                <div class="testimonio-card">
+                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="quote">"Excelente atención. Conseguí los pistones y cojinetes en supermedida para un motor Toyota que en ningún otro local de Santiago tenían. Totalmente recomendados."</p>
+                    <div class="author-info">
+                        <strong>Carlos Gómez</strong>
+                        <span>Rectificadora Gómez (La Banda)</span>
+                    </div>
+                </div>
+                <div class="testimonio-card">
+                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="quote">"Trabajo con ellos hace años. Lo que destaco es el asesoramiento técnico y la rapidez para responder las consultas por WhatsApp. El stock es muy completo."</p>
+                    <div class="author-info">
+                        <strong>Ing. Martín Silva</strong>
+                        <span>Taller Mecánico Silva & Hijos</span>
+                    </div>
+                </div>
+                <div class="testimonio-card">
+                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="quote">"Las juntas Taranto y la tapa que compramos para un corsa quedaron de diez. Los precios son excelentes y la entrega es inmediata."</p>
+                    <div class="author-info">
+                        <strong>Eduardo Mansilla</strong>
+                        <span>Mansilla Motores</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ubicación y Contacto -->
+    <section class="contacto animate-on-scroll" id="contacto">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">ENCUÉNTRANOS</span>
+                <h2 class="section-title">Ubicación y Contacto</h2>
+                <p class="section-description">Visítanos en nuestro local comercial o realiza tu consulta rápida a través de nuestros canales de atención.</p>
+            </div>
+
+            <div class="contacto-grid">
+                <!-- Details Card -->
+                <div class="contacto-details">
+                    <div class="contacto-card">
+                        <i class="fas fa-map-marker-alt card-icon text-blue"></i>
+                        <h3>Dirección</h3>
+                        <p>Hipólito Yrigoyen 1563</p>
+                        <p>Santiago del Estero, Argentina</p>
+                        <a href="https://maps.app.goo.gl/sa3uZFrq23a8Ca6bA" target="_blank" class="card-link" id="maps-link">Ver en Google Maps <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <div class="contacto-card">
+                        <i class="fas fa-phone-alt card-icon text-red"></i>
+                        <h3>Teléfono & WhatsApp</h3>
+                        <p class="phone-number">+54 9 385 748-5143</p>
+                        <p>Atención inmediata en horario comercial</p>
+                        <a href="https://wa.me/5493857485143" target="_blank" class="card-link btn-wa-inline" id="whatsapp-link-inline">Enviar mensaje <i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Embedded Map Container -->
+                <div class="contacto-map-wrapper">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1m4!2s0x943b5245f8082cbb%3A0xc3d26a823b66cbae!8m2!3d-27.7721721!4d-64.2726743!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943b5245f8082cbb%3A0xc3d26a823b66cbae!2sCentro%20Motor%20Repuestos!5e0!3m2!1ses-419!2sar!4v1700000000000!5m2!1ses-419!2sar" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0; min-height: 380px; display:block;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <span class="logo-accent-blue">CENTRO</span>
+                    <span class="logo-accent-red">MOTOR</span>
+                    <span class="logo-sub">REPUESTOS</span>
+                </a>
+                <p class="footer-desc">Repuestos de motor de alta calidad en Santiago del Estero. Tu motor en manos expertas.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Enlaces rápidos</h4>
+                <a href="#hero">Inicio</a>
+                <a href="#tienda">Catálogo</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+            <div class="footer-legal">
+                <p>&copy; 2026 Centro Motor Repuestos. Todos los derechos reservados.</p>
+                <p class="developer-tag">Desarrollado con excelencia técnica.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Quick View Product Modal -->
+    <div class="modal" id="product-modal">
+        <div class="modal-content-glass">
+            <button class="modal-close" id="modal-close-btn" aria-label="Cerrar ventana">&times;</button>
+            <div class="modal-body" id="modal-body-content">
+                <!-- Dynamic content from JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin Panel Modal -->
+    <div class="modal" id="admin-modal">
+        <div class="modal-content-glass admin-modal-content">
+            <button class="modal-close" id="admin-modal-close-btn" aria-label="Cerrar Panel">&times;</button>
+            <div class="modal-body">
+                <h3 class="admin-panel-title"><i class="fas fa-tasks"></i> Panel de Administración de Productos</h3>
+                <p class="admin-panel-subtitle">Administra tu inventario de repuestos en tiempo real. Los cambios se guardan localmente en el navegador.</p>
+                
+                <div class="admin-layout">
+                    <!-- Form for Add/Edit -->
+                    <div class="admin-form-box">
+                        <h4 id="form-action-title"><i class="fas fa-plus"></i> Agregar Nuevo Producto</h4>
+                        <form id="product-form">
+                            <input type="hidden" id="edit-product-id">
+                            
+                            <div class="form-group">
+                                <label for="form-title">Nombre del Repuesto</label>
+                                <input type="text" id="form-title" required placeholder="Ej: Válvulas de escape Corsa 1.6">
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="form-category">Categoría</label>
+                                    <select id="form-category" required>
+                                        <option value="pistones">Pistones y Bielas</option>
+                                        <option value="juntas">Juntas y Sellos</option>
+                                        <option value="valvulas">Válvulas y Distribución</option>
+                                        <option value="tapas">Tapas y Block</option>
+                                        <option value="bombas">Bombas y Accesorios</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-price">Precio Referencial</label>
+                                    <input type="text" id="form-price" required placeholder="Ej: $45.000">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="form-stock">Disponibilidad</label>
+                                    <select id="form-stock" required>
+                                        <option value="in">En Stock</option>
+                                        <option value="low">Últimas unidades</option>
+                                        <option value="out">Sin Stock</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-image">URL de la Imagen (Foto real)</label>
+                                    <input type="url" id="form-image" placeholder="URL de la imagen (dejar en blanco para usar prediseñada)">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="form-compat-brand">Marca compatible</label>
+                                    <input type="text" id="form-compat-brand" placeholder="Ej: Fiat, Toyota, Chevrolet">
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-compat-model">Modelo compatible</label>
+                                    <input type="text" id="form-compat-model" placeholder="Ej: Uno, Hilux, Corsa">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="form-description">Descripción</label>
+                                <textarea id="form-description" rows="3" required placeholder="Detalles de la pieza, materiales..."></textarea>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary" id="btn-save-product">Guardar Repuesto</button>
+                                <button type="button" class="btn btn-secondary" id="btn-cancel-edit">Cancelar</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Products List inside Admin -->
+                    <div class="admin-list-box">
+                        <h4><i class="fas fa-list"></i> Repuestos Publicados</h4>
+                        <div class="admin-products-list" id="admin-products-list">
+                            <!-- Populated dynamically -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/5493857485143?text=Hola,%20vengo%20desde%20su%20sitio%20web%20y%20quisiera%20realizar%20una%20consulta." target="_blank" class="whatsapp-float" id="whatsapp-float-btn" aria-label="Consultar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="float-tooltip">¿Buscas un repuesto? Consúltanos</span>
+    </a>
+
+    <!-- Custom Script -->
+    <script src="app.js"></script>
+</body>
+</html>
